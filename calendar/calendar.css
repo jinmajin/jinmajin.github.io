@@ -1,0 +1,91 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: Helvetica, Arial, 'lucida grande',tahoma,verdana,arial,sans-serif;
+	white-space: nowrap;
+}
+
+#title{
+	font-size: 22px;
+	line-height: 35px;
+	color: #FFF;
+	margin: 10px;
+	font-weight: bold;
+}
+
+#header{
+	border-radius: 2px;
+	background-color: rgb(75,110,168);
+	margin: 0px 10px 40px 10px;
+}
+
+.darkText{
+	color: rgb(115,115,115);
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0px 5px;
+}
+
+.lightText{
+	color: rgb(185,185,185);
+	font-size: 10px;
+}
+
+.time {
+	position: absolute;
+	text-align: right;
+	width: 85px;
+	line-height: 16px;
+}
+
+#timeline {
+	position: relative;
+	display: inline-block;
+	width: 90px;
+	height: 730px; 			// timeline is 10px longer than events to offset the time labels
+}
+
+#events{
+	position: relative;
+	display: inline-block;
+	width: 600px;
+	height: 720px;
+	padding: 0px 10px;
+	background-color: rgb(236,236,236);
+	border-left: 1px solid lightgray;
+}
+
+.event{
+	position: absolute;
+	background-color: #FFF;
+}
+
+.eventName {
+	color: rgb(75,110,168);
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.location{
+	font-size: 11px;
+	color: rgb(122,122,122);
+	padding-left: 2px;
+}
+
+.halfhour{
+	padding-top: 3px;
+}
+
+.blueStripe {
+	float: left;
+	background-color: rgb(75,110,168);
+	width: 5px;
+}
+
+.eventInfo{
+	float: left;
+	border: 1px solid lightgray;
+	border-left: none;
+	padding-top: 5px;
+	padding-left: 5px;
+}

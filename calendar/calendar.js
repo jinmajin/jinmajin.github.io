@@ -21,10 +21,19 @@ var testData = [{
 	}
 ];
 
-// more complicated test case
+// more complex test case
 var testData2 = [{
 		start : 30,
 		end : 60
+	}, {
+		start: 40,
+		end: 80
+	}, {
+		start: 70,
+		end: 90
+	}, {
+		start: 70,
+		end: 90
 	}, {
 		start : 90,
 		end : 180
@@ -38,14 +47,23 @@ var testData2 = [{
 		start : 300,
 		end : 420
 	}, {
-		start : 300,
-		end : 420
+		start : 490,
+		end : 510
 	}, {
 		start : 500,
 		end : 600
 	}, {
 		start : 410,
 		end : 600
+	}, {
+		start: 600,
+		end: 650
+	},{
+		start: 640,
+		end: 690
+	}, {
+		start: 660,
+		end: 690
 	}
 ];
 
@@ -93,7 +111,7 @@ function layOutDay(events){
 	var calendar = document.getElementById('events'); 
 	calendar.innerHTML = "";
 	var width = 600;
-	var offset = 10; // amount of padding to the left padding
+	var offset = 10; // amount of padding to the left
 	
 	var levels = getRanked(events);
 	for(var i = 0; i < levels.length; i++){
@@ -110,8 +128,8 @@ function layOutDay(events){
 			
 			var dataDiv = document.createElement('div');
 			dataDiv.className = "eventInfo";
-			dataDiv.style.width = width/event.rank - 11 + "px"; // bluestripe =5, border =1, padding = 5 
-			dataDiv.style.height = (event.end - event.start) - 7 + "px"; // border = 2, padding  = 5
+			dataDiv.style.width = width/event.rank - 11 + "px"; // 11: bluestripe =5, border =1, padding = 5 
+			dataDiv.style.height = (event.end - event.start) - 7 + "px"; // 7: border = 2, padding  = 5
 			
 			var name = document.createElement('div');
 			name.innerHTML = "Sample Item";
@@ -187,7 +205,7 @@ function levelLoop(levels, func, reverseOrder) {
 
 
 /** given two levels,
-*	go through them and compare their events.
+*	go through and compare their events.
 *	run func on the colliding events
 */
 function modifyCollidingEvents(levelI, levelJ, func){
@@ -242,4 +260,3 @@ function greedyGrab(data) {
 function isOverlapping(event1, event2) {
 	return event1.start < event2.end && event2.start < event1.end;
 }
-

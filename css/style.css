@@ -164,10 +164,10 @@ a:hover{
 	font-size: .9em;
 	line-height: 1.2em;
 	margin: 0px;
-	color: #444;
+	color: #222;
 }
 
-.mainDetails {
+.main_details {
 	padding: 25px 35px;
 	border-bottom: 2px solid #222;
 }
@@ -177,7 +177,7 @@ a:hover{
 	font-weight: 100;
 }
 
-#mainArea {
+#main_area {
 	padding: 0px 50px;
 }
 
@@ -211,7 +211,7 @@ a:hover{
 }
 
 .section:last-child {
-	padding: 20px 0 10px;
+	padding: 20px 0 40px;
 }
 
 .section_title {
@@ -239,7 +239,8 @@ a:hover{
 	margin-bottom: 20px;
 }
 
-.details {
+#resume .details  {
+	color: #444;
 	font-style: italic;
 	margin-bottom: 3px;
 }
@@ -288,7 +289,7 @@ a:hover{
 }
 
 @media (max-width: 480px) {
-	.mainDetails {
+	.main_details {
 		padding: 15px 15px;
 	}
 	
@@ -296,7 +297,7 @@ a:hover{
 		padding: 15px 0 0;
 	}
 	
-	#mainArea {
+	#main_area {
 		padding: 0 25px;
 	}
 
@@ -326,9 +327,18 @@ a:hover{
 		box-shadow:none;
 	}
 	.section{
-		padding: 10px 0;
+		padding: 7px 0;
 	}
-	#mainArea {
+	
+	.item{
+		margin-bottom: 7px;
+	}
+	
+	.main_details{
+		padding: 20px 35px;
+	}
+	
+	#main_area {
 		padding: 0 25px;
 	}
 	

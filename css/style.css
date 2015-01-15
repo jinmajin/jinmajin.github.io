@@ -3,8 +3,8 @@
 	margin: 0px;
 }
 
-body{
-	background-color: #111;
+body, #main, #header{
+	background-color: #FAFAFA;
 }
 
 img {
@@ -12,13 +12,16 @@ img {
 }
 
 #main {
-	background-color: #FAFAFA;
-	font-family: sans-serif;
-	max-width: 850px;
+	max-width: 1000px;
 	left: 0;
 	right: 0;
 	margin: 0px auto;
 	padding: 20px 0px;
+	padding-top: 180px;
+}
+
+#main, #footer, #header {
+	font-family: sans-serif;
 }
 
 .main{
@@ -59,6 +62,8 @@ p {
 
 #header {
 	text-align: center;
+	position: fixed;
+	width: 100%;
 }
 
 #resume, #header{
@@ -68,6 +73,7 @@ p {
 #footer {
 	margin-top: 1em;
 	border-top: 1px solid rgba(0,0,0,.1);
+	padding: 0% 5%;
 }
 
 .title {

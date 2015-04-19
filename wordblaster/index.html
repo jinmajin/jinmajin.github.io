@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Word Blaster</title>
+<style type="text/css">
+@import
+	"http://ajax.googleapis.com/ajax/libs/dojo/1.6/dojo/resources/dojo.css"
+	;
+
+@import
+	"http://ajax.googleapis.com/ajax/libs/dojo/1.6/dijit/themes/claro/claro.css"
+	;
+
+html,body,.dijitBorderContainer {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+#mainCanvas {
+	background-color: #000;
+	width: 600px;
+	height: 600px;
+}
+
+#playGame {
+	display: none;
+}
+
+#gatherWords {
+	display: block;
+	color: white;
+}
+
+.bg {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -5000;
+}
+</style>
+<script type="text/javascript">
+	var djConfig = {
+		isDebug : false,
+		parseOnLoad : true,
+		baseUrl : './',
+		modulePaths : {}
+	};
+</script>
+<script type="text/javascript"
+	src="http://ajax.googleapis.com/ajax/libs/dojo/1.6/dojo/dojo.xd.js">
+	
+</script>
+<script type="text/javascript" src="libs/uow.js"></script>
+<script type="text/javascript" src="easel.js"></script>
+<script type="text/javascript" src="Text.js"></script>
+<script type="text/javascript" src="WordBlaster.js"></script>
+<script type="text/javascript" src="speakClient.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19227500-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body class="claro">
+	<div id="audio"></div>
+	<div id="playGame" align="center">
+		<h1>Word Blaster</h1>
+		<br />
+		<text>Credits to <a
+			href="http://www.youtube.com/user/MandoPony">MandoPony</a> for the
+		awesome background music! <br />
+		<b>Controls:</b> <br />
+		Up/Down Arrow Keys - Movement <br />
+		Right/Left Arrow Keys - Rotation <br />
+		Space Bar - Shoot <br /> <br />
+                <b>Directions:</b> Shoot the jumbled red words to break them apart. Collect the parts in the right order!</text>
+		<br />
+		<button type="button" onclick="musicToggle()">Turn Music
+			On/Off</button>
+		<br />
+		<canvas id="mainCanvas" width="600" height="600" />
+	</div>
+	<div id="gatherWords">
+		<img src="deepSpaceBKG.jpg" class="bg" />
+		<center>
+			<h1>Welcome to the trial version of Word Blaster, a literacy
+				game!</h1>
+		</center>
+		<h1>Enter Words</h1>
+		<br />
+		<text>Choose how many words to enter using the '+' button, then
+		enter the words you would like to play with and press 'Go!' to begin
+		the game. Separate morphemes or syllables with dashes (ex. photosynthesis =
+		pho-to-syn-the-sis). You can also play with the default list of words
+		by clicking the 'Default' button. Please limit the length of the words
+		to 14 characters or less.</text>
+		<br /> <br />
+		<div id=wordFields>
+			<input type="text" name="word" /><br />
+		</div>
+		<button type="button" onclick="add()">+</button>
+		<br />
+		<button type="button" onclick="entered()">Go!</button>
+		<button type="button" onclick="defaulted()">Default</button>
+	</div>
+</body>
+</html>	

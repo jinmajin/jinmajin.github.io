@@ -1,62 +1,70 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="generator"
-      content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
-    <title>Mary Ann</title>
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#2b5797">
-    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
-    <meta name="theme-color" content="#000000">
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <script src="js/nav.js"></script>
-    <meta name="viewport" content="width=device-width">
-  </head>
-  <body>
-    <div id="header" class="menu">
-      <a href="/"><img class="logo" src="./resources/logo.png" alt="JIN" width="150" /></a>
-      <span class="menuitem active" id="about_me_item" onclick="navTo(&#39;about_me&#39;)">ABOUT</span>
-      <span class="menuitem" id="projects_item" onclick="navTo(&#39;projects&#39;)">PROJECTS</span>
-      <span class="menuitem" id="resume_item" onclick="navTo(&#39;resume&#39;)">RESUME</span>
-    </div>
-    <div id="main">
-      <div id="content">
-        <div class="main" id="about_me">
-          <p>Hi, I&#39;m Mary Ann. I am a senior studying Computer Science at the
-            <a class="link" href="http://mit.edu/">Massachusetts Institute of Technology</a>. I currently live at
-            <a class="link" href="http://wilg.mit.edu/">WILG</a>. I was born in Texas and grew up in North Carolina, where
-            I attended the
-            <a class="link" href="http://ncssm.edu/">North Carolina School of Science and Mathematics</a>. I love video
-            games and food.
-          </p>
-          <p>Here is a picture of me frolicking in the fields of
-            <a class="link" href="http://en.wikipedia.org/wiki/Furano,_Hokkaido">Furano</a> over the summer:
-          </p>
-          <img class="centered" src="resources/hokkaido.jpg" alt="Hokkaido" width="600" />
-          <p>My stranger interests include
-            <a class="link" href="/pf">personal finance</a> and collecting cute plushies, such as this guy:
-          </p>
-          <img class="centered" src="resources/dorachan.jpg" alt="Doraemon" width="600" />
-        </div>
-        <div class="main" id="projects">
-          Under Construction...
-          <div id="sum2014">
-            <p>Summer 2014:</p>
-            <img class="centered" src="resources/suikawari.jpeg" alt="Watermelon Smash" width="600" />
+<head>
+  <meta name="generator"
+  content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+  <title>Mary Ann</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script src="js/jquery.js"></script>
+  <script src="js/nav.js"></script>
+  <meta name="viewport" content="width=device-width">
+</head>
+<body>
+  <div id="header" class="menu">
+    <a href="/"><img class="logo" src="./resources/logo.png" alt="JIN" width="150" /></a>
+    <span class="menuitem active" id="about_me_item" onclick="navTo(&#39;about_me&#39;)">ABOUT</span>
+    <span class="menuitem" id="projects_item" onclick="navTo(&#39;projects&#39;)">PROJECTS</span>
+    <span class="menuitem" id="resume_item" onclick="navTo(&#39;resume&#39;)">RESUME</span>
+  </div>
+  <div id="main">
+    <div id="content">
+      <div class="main" id="about_me">
+        <p>Hi, I&#39;m Mary Ann. I am a senior studying Computer Science at the
+          <a class="link" href="http://mit.edu/">Massachusetts Institute of Technology</a>. I currently live at
+          <a class="link" href="http://wilg.mit.edu/">WILG</a>. I was born in Texas and grew up in North Carolina, where
+          I attended the
+          <a class="link" href="http://ncssm.edu/">North Carolina School of Science and Mathematics</a>. I love video
+          games and food.
+        </p>
+        <p>Here is a picture of me frolicking in the fields of
+          <a class="link" href="http://en.wikipedia.org/wiki/Furano,_Hokkaido">Furano</a> over the summer:
+        </p>
+        <img class="centered" src="resources/hokkaido.jpg" alt="Hokkaido" width="600" />
+        <p>My stranger interests include
+          <a class="link" href="/pf">personal finance</a> and collecting cute plushies, such as this guy:
+        </p>
+        <img class="centered" src="resources/dorachan.jpg" alt="Doraemon" width="600" />
+      </div>
+      <div class="main" id="projects">
+        <div class="title">Under Construction.</div>
+        <div class="clear"></div>
+        <div class="project_card left" onclick="toggleSlide(this)">
+          <div class="img_card">
+            <div class="date">Summer 2014</div>
+            <img src="resources/suikawari.jpeg" alt="Watermelon Smash" width="500" />
+            <div class="info">Howaco's Watermelon Smash - HTML5 Mobile Game</div>
+          </div>
+          <div class="project_info hidden">
+            <div class="subtitle">Summer 2014</div>
+            <div class="subtitle">Howaco's Watermelon Smash - HTML5 Mobile Game</div>
             <p>While interning at
               <a class="link" href="https://www.ibj.jp/">Internet Business Japan</a>, I created a summer-themed game for
               the
@@ -66,86 +74,93 @@
               <a class="link" href="http://en.wikipedia.org/wiki/Suikawari">suikawari</a>. The game is available
               <a class="link" href="https://www.hwc.jp/games/suika/game.html">online</a> and in the
               <a class="link" href="https://itunes.apple.com/us/app/howacos-watermelon-smash/id905151374?mt=8">App
-              Store</a>.
-            </p>
-          </div>
-          <div id="spr2014">
-          </div>
-          <div id="jan2014">
-            <p>January 2014:</p>
-            <img class="centered" src="resources/groupfit.jpg" alt="GroupFit" width="600" />
-            <p>As part of the
-              <a class="link" href="http://6.470.scripts.mit.edu/2014/">6.470 Web Programming Competition</a>, I created
-              a group-based exercise website, GroupFit, with 3 other team members. I was tasked mainly with UI Design and
-              implementation, such as the activity graphs and input forms.
-            </p>
-            <p>The site won an Honorable Mention in the competition.</p>
-          </div>
-        </div>
-        <div class="main" id="resume">
-          <div class="main_details">
-            <div id="name">
-              <h1>MARY ANN JIN</h1>
+                Store</a>.
+              </p>
             </div>
-            <div id="contactDetails">
-              <ul>
-                <li>
-                  <a href="mailto:jinm@mit.edu" target="_blank">jinm@mit.edu</a>
-                </li>
-                <li>
-                  <a href="http://majin.mit.edu">http://majin.mit.edu</a>
-                </li>
-                <li>919-412-4722</li>
-              </ul>
+          </div>
+          <div class="project_card right" onclick="toggleSlide(this)">
+            <div class="img_card">
+              <div class="date">January 2014</div>
+              <img src="resources/groupfit.jpg" alt="GroupFit" width="500" />
+              <div class="info">GroupFit - Group Exercising Website</div>
+            </div>
+            <div class="project_info hidden" id="jan2014">
+              <div class="subtitle">January 2014</div>
+              <div class="subtitle">GroupFit - Group Exercising Website</div>
+              <p>As part of the
+                <a class="link" href="http://6.470.scripts.mit.edu/2014/">6.470 Web Programming Competition</a>, I created
+                a group-based exercise website, GroupFit, with 3 other team members. I was tasked mainly with UI Design and
+                implementation, such as the activity graphs and input forms.
+              </p>
+              <p>The site won an Honorable Mention in the competition.</p>
+            </div>
+          </div>
+          <div class="clear"></div>
+      </div>
+      <div class="main" id="resume">
+        <div class="main_details">
+          <div id="name">
+            <h1>MARY ANN JIN</h1>
+          </div>
+          <div id="contactDetails">
+            <ul>
+              <li>
+                <a href="mailto:jinm@mit.edu" target="_blank">jinm@mit.edu</a>
+              </li>
+              <li>
+                <a href="http://majin.mit.edu">http://majin.mit.edu</a>
+              </li>
+              <li>919-412-4722</li>
+            </ul>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div id="main_area">
+          <div class="section">
+            <div class="section_title">
+              <h1>Education</h1>
+            </div>
+            <div class="section_content">
+              <div class="item">
+                <h2>Massachusetts Institute of Technology</h2>
+                <p class="details left">Candidate for B.S. in Computer Science and Engineering</p>
+                <p class="details right">June 2016</p>
+                <p class="clear"></p>
+                <p>GPA: 4.9/5.0</p>
+              </div>
             </div>
             <div class="clear"></div>
           </div>
-          <div id="main_area">
-            <div class="section">
-              <div class="section_title">
-                <h1>Education</h1>
-              </div>
-              <div class="section_content">
-                <div class="item">
-                  <h2>Massachusetts Institute of Technology</h2>
-                  <p class="details left">Candidate for B.S. in Computer Science and Engineering</p>
-                  <p class="details right">June 2016</p>
-                  <p class="clear"></p>
-                  <p>GPA: 4.9/5.0</p>
-                </div>
-              </div>
-              <div class="clear"></div>
+          <div class="section">
+            <div class="section_title">
+              <h1>Employment</h1>
             </div>
-            <div class="section">
-              <div class="section_title">
-                <h1>Employment</h1>
+            <div class="section_content">
+              <div class="item">
+                <h2>Facebook</h2>
+                <p class="details left">Front End Engineer Intern</p>
+                <p class="details right">Jun - Aug 2015</p>
+                <p class="clear"></p>
+                <p>&bullet; Worked on News Feed, developing features for the core Facebook experience</p>
+                <p>&bullet; Finished original project 7 weeks early, joined a new product team for remainder of internship</p>
+                <p>&bullet; Utilized: HTML/CSS, JavaScript (React), PHP (XHP)</p>
               </div>
-              <div class="section_content">
-                <div class="item">
-                  <h2>Facebook</h2>
-                  <p class="details left">Front End Engineer Intern</p>
-                  <p class="details right">Jun - Aug 2015</p>
-                  <p class="clear"></p>
-                  <p>&bullet; Worked on News Feed, developing features for the core Facebook experience</p>
-                  <p>&bullet; Finished original project 7 weeks early, joined a new product team for remainder of internship</p>
-                  <p>&bullet; Utilized: HTML/CSS, JavaScript (React), PHP (XHP)</p>
-                </div>
-                <div class="item">
-                  <h2>Internet Business Japan - HWC</h2>
-                  <p class="details left">Web Engineer Intern</p>
-                  <p class="details right">May - Aug 2014</p>
-                  <p class="clear"></p>
-                  <p>&bullet; Designed and developed HTML5 game for the company mascot</p>
-                  <p>&bullet; Published game on company website and in the App Store</p>
-                  <p>&bullet; Created a Google Maps app for displaying client locations/information</p>
-                  <p>&bullet; Utilized: HTML/CSS, JavaScript (jQuery/EaselJS), PHP, SQL, Google Maps API, Adobe Creative Suite 6</p>
-                </div>
-                <div class="item">
-                  <h2>IBM</h2>
-                  <p class="details left">Software Developer Intern</p>
-                  <p class="details right">May 2013 - May 2014</p>
-                  <p class="clear"></p>
-                  <p>&bullet; Created a plugin that integrated cloud-based video selection into IBM product
+              <div class="item">
+                <h2>Internet Business Japan - HWC</h2>
+                <p class="details left">Web Engineer Intern</p>
+                <p class="details right">May - Aug 2014</p>
+                <p class="clear"></p>
+                <p>&bullet; Designed and developed HTML5 game for the company mascot</p>
+                <p>&bullet; Published game on company website and in the App Store</p>
+                <p>&bullet; Created a Google Maps app for displaying client locations/information</p>
+                <p>&bullet; Utilized: HTML/CSS, JavaScript (jQuery/EaselJS), PHP, SQL, Google Maps API, Adobe Creative Suite 6</p>
+              </div>
+              <div class="item">
+                <h2>IBM</h2>
+                <p class="details left">Software Developer Intern</p>
+                <p class="details right">May 2013 - May 2014</p>
+                <p class="clear"></p>
+                <p>&bullet; Created a plugin that integrated cloud-based video selection into IBM product
                   <p>&bullet; Presented to product manager, program director, and marketing manager</p>
                   <p>&bullet; Continued remotely during school year with team to create production version</p>
                   <p>&bullet; Plugin deployed with newest version of product</p>
@@ -199,17 +214,16 @@
         </div>
       </div>
     </div>
-    </div>
     <div id="footer">
-      <span class="copyright">&copy; 2014 Mary Ann Jin. All rights reserved.</span>
+      <span class="copyright">&copy; 2014-current Mary Ann Jin. All rights reserved.</span>
       <div class="footericons">
         <a class="footericon" href="https://www.linkedin.com/in/maryannjin">
-        <img src="resources/linkedin.png" alt="LinkedIn" height="35" />
+          <img src="resources/linkedin.png" alt="LinkedIn" height="35" />
         </a>
         <a class="footericon" href="https://github.com/jinmajin">
-        <img src="resources/github.png" alt="GitHub" height="35" />
+          <img src="resources/github.png" alt="GitHub" height="35" />
         </a>
       </div>
     </div>
   </body>
-</html>
+  </html>

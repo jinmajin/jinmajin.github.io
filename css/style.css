@@ -15,10 +15,61 @@ img {
 	max-width: 90%;
 }
 
+.date, .info {
+	background-color: rgba(0,0,0,.5);
+	color: white;
+	display: none;
+	font-size: 20px;
+	left: 0;
+	line-height: 30px;
+	position: absolute;
+	width: 100%;
+}
+
+.img_card:hover .date, .img_card:hover .info {
+	display: block;
+}
+
+.date {
+	top: 0;
+}
+
+.info {
+	bottom: 0;
+}
+
+.img_card img {
+	max-width: 100%;
+}
+
 .logo {
 	max-width: 25%;
 }
 
+.project_card {
+	display: inline-block;
+	margin: 1em 0em;
+	width: 48%;
+}
+
+.subtitle {
+	color: #AAA;
+	font-style: italic;
+	text-align: center;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.img_card {
+	display: inline-block;
+	position: relative;
+}
 	
 #main {
 	max-width: 1000px;
@@ -69,8 +120,8 @@ p {
 }
 
 #footer {
+	border-top: 1px solid #EEE;
 	margin-top: 1em;
-	border-top: 1px solid rgba(0,0,0,.1);
 	padding: 0% 5%;
 }
 
@@ -122,7 +173,15 @@ p {
 	color: #111;
 }
 
-#resume, #projects, #saving, #credit{
+#projects {
+	text-align: center;
+}
+
+.project_info {
+	text-align: left;
+}
+
+.hidden, #resume, #projects, #saving, #credit{
 	display: none;
 }
 
@@ -134,8 +193,6 @@ p {
 	margin: 1em 30px;
 }
 
-
-
 @media all and (max-width: 600px) {
 	.footericon, .footericons{
 		float: none;
@@ -143,10 +200,17 @@ p {
 	#footer{
 		text-align: center;
 	}
+	.title {
+		display: block;
+		margin-bottom: 0px;
+	}
+
+	#name, #contactDetails {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
 }
-
-
-
 
 #resume{
 	box-shadow: 0 0 5px 2px rgba(0,0,0,.35);
@@ -255,14 +319,6 @@ a:hover{
 	margin-bottom: 3px;
 }
 
-.left {
-	float: left;
-}
-
-.right{
-	float: right;
-}
-
 .skills {
 	margin-bottom: 20px;
 }
@@ -280,17 +336,6 @@ a:hover{
 		min-width: 280px;
 	}
 
-	.title {
-		display: block;
-		margin-bottom: 0px;
-	}
-
-	#name, #contactDetails {
-		float: none;
-		width: 100%;
-		text-align: center;
-	}
-	
 	.section_title, .section_content {
 		float: none;
 		width: 100%;
@@ -301,6 +346,10 @@ a:hover{
 		font-size: 1.25em;
 	}
 
+	.project_card {
+		width: 90%;
+		float: none;
+	}
 }
 
 @media (max-width: 480px) {
